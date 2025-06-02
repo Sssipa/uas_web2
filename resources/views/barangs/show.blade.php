@@ -76,7 +76,7 @@
                             class="inline-block px-5 py-2 text-sm bg-black text-white rounded-xl hover:bg-gray-900 transition duration-200">
                             ← Back to Manage Items
                         </a>
-                    @elseif(Auth::id() === $barang->user_id)
+                    @else
                         <a href="{{ route('barangs.jual') }}"
                             class="inline-block px-5 py-2 text-sm bg-black text-white rounded-xl hover:bg-gray-900 transition duration-200">
                             ← Back to Sell

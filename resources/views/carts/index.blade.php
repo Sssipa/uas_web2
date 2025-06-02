@@ -43,12 +43,12 @@
                 <p class="text-lg font-semibold text-gray-700">
                     Total: Rp{{ number_format($carts->sum(fn($cart) => $cart->barang->harga), 0, ',', '.') }}
                 </p>
-                <form action="{{ route('checkout.store') }}" method="POST" class="inline-block mt-3">
+                <form action="{{ route('checkout.index') }}" method="POST" class="inline-block mt-3">
                     @csrf
-                    <button type="submit"
-                        class="bg-green-600 text-white px-6 py-2 rounded-xl hover:bg-green-700 transition">
+                    <a href="{{ route('checkout.index') }}"
+                       class="bg-green-600 text-white px-6 py-2 rounded-xl hover:bg-green-700 transition inline-block mt-3">
                         Checkout
-                    </button>
+                    </a>
                 </form>
             </div>
         @endif

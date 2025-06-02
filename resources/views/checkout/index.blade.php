@@ -17,11 +17,11 @@
         @endforelse
 
         @if($carts->count())
-            <div class="text-right mt-6">
-                <form action="{{ route('checkout.store') }}" method="POST" class="flex-1">
+            <div class="text-right mt-8">
+                <form action="{{ route('checkout.store') }}" method="POST" class="inline-block mt-3">
                     @csrf
                     <button type="submit"
-                        class="w-full bg-black text-white py-3 rounded-xl font-semibold hover:bg-gray-900 transition duration-200 flex items-center justify-center">
+                        class="bg-black text-white px-6 py-3 rounded-xl font-semibold hover:bg-gray-900 transition duration-200 flex items-center justify-center">
                         🛒 Buy Now
                     </button>
                 </form>

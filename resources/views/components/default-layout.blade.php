@@ -116,7 +116,7 @@
                                 @can('admin')
                                     <x-mobile-nav-link href="/dashboard" :active="request()->is('dashboard')">Dashboard</x-mobile-nav-link>
                                     <x-mobile-nav-link href="/manage-items" :active="request()->is('manage-items')">Manage Items</x-mobile-nav-link>
-                                    <x-mobile-nav-link href="/manage-users" :active="request()->is('manage-users')">Users</x-mobile-nav-link>
+                                    <x-mobile-nav-link href="/manage-users" :active="request()->is('manage-usersc')">Users</x-mobile-nav-link>
                                 @else
                                     <x-mobile-nav-link href="/" :active="request()->is('/')">Home</x-mobile-nav-link>
                                     <x-mobile-nav-link href="/beli" :active="request()->is('beli')">Items</x-mobile-nav-link>
